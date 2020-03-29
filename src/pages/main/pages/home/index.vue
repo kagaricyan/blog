@@ -1,19 +1,22 @@
 <template>
   <div class="home">
-    <div id="nav">
-      <a href="test.html">Home</a>
-    </div>
+home
   </div>
 </template>
 
 <script>
+
   export default {
     name: "index",
-    components:{
-    }
+    data() {
+    },
   }
 </script>
 
-<style scoped>
-
+<style lang="stylus" scoped>
+  .home {
+    overflow: auto
+    width: 100%
+    min-height: 100%
+  }
 </style>

@@ -6,7 +6,7 @@ module.exports= {
       entry: 'src/pages/main/main.js',
       template: 'public/index.html',
       filename: 'index.html',
-      title: 'main',
+      title: 'inari的博客',
       chunks: ['chunk-vendors', 'chunk-common', 'index']
     },
     test: {
