@@ -5,22 +5,28 @@
     </mu-button>
     <template slot="right">
       <!--      <mu-text-field  class="u-search-box" icon="search"></mu-text-field>-->
-      <mu-menu>
+      <mu-menu  open-on-hover>
         <mu-button icon>
           <mu-icon value="color_lens"></mu-icon>
         </mu-button>
         <mu-list slot="content">
           <mu-list-item button :ripple="false">
             <mu-list-item-action>
-              <span class="u-color"></span>
+              <span class="u-color s-default"></span>
             </mu-list-item-action>
             <mu-list-item-title>默认</mu-list-item-title>
           </mu-list-item>
           <mu-list-item button :ripple="false">
             <mu-list-item-action>
-              <span class="u-color"></span>
+              <span class="u-color s-bilibili"></span>
             </mu-list-item-action>
             <mu-list-item-title>哔哩粉</mu-list-item-title>
+          </mu-list-item>
+          <mu-list-item button :ripple="false">
+            <mu-list-item-action>
+              <span class="u-color s-dark"></span>
+            </mu-list-item-action>
+            <mu-list-item-title>Dark</mu-list-item-title>
           </mu-list-item>
         </mu-list>
       </mu-menu>
@@ -55,6 +61,8 @@
 
 <style lang="stylus" scoped>
   .mu-appbar {
+    width: 100%
+    flex-shrink 0
     .u-search-box {
       display inline-flex
       align-content center
@@ -75,8 +83,15 @@
     width: 24px
     height: 24px
     border-radius 50%
-    background-color: #fb6299
+    &.s-default{
+      background-color: #2196f3
+    }
+    &.s-bilibili{
+      background-color: #fb6299
+    }
+    &.s-dark{
+      background-color: #fb6299
+    }
   }
-
 
 </style>

@@ -1,7 +1,10 @@
 <template>
   <div class="base-layout">
     <app-bar :params="renderData"></app-bar>
-    <side-bar :params="renderData"></side-bar>
+      <side-bar :params="renderData"></side-bar>
+    <div class="g-main">
+      <router-view/>
+    </div>
   </div>
 </template>
 
@@ -29,8 +32,15 @@
 
 <style lang="stylus" scoped>
   .base-layout{
-    overflow: auto
+    display flex
+    flex-direction: column
+    overflow: hidden
     width: 100%
-    min-height: 100%
+    height: 100%
+    .g-main{
+      display flex
+      overflow: auto
+      flex-grow 1
+    }
   }
 </style>

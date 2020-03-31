@@ -1,6 +1,6 @@
 module.exports= {
   publicPath: './',
-  outputDir:'static',
+  outputDir:'blog',
   pages: {
     index: {
       entry: 'src/pages/main/main.js',
