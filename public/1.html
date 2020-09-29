@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<div id="app">
+    <svg width="200px" height="200px" viewBox="0 0 200 200">
+        <circle r="100" cx="100" cy="100" fill="#f00"></circle>
+        <template v-for="(item,index) in count">
+            <path :d="`M100 100,v -100,A 100 100 0 0 1 ${x} ${y}z`"
+                  :transform="`rotate(${index*deg},100 100)`"
+                  :fill="index%2==0?'#0f0':'#00f'" stroke="none"></path>
+            <image xlink:href="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png"
+                   width="135" height="65" x="30" y="60"></image>
+        </template>
+    </svg>
+    <div>
+        <span>当前个数{{ count }}</span>
+        <button @click="add">增加2格</button>
+        <button @click="sub">减少2格</button>
+    </div>
+</div>
+<script>
+  new Vue({
+    el: '#app',
+    data() {
+      return {
+        count: 6,
+        r: 100
+      }
+    },
+    computed: {
+      deg() {
+        return 360 / this.count
+      },
+      x() {
+        const cos = Math.cos(Math.PI * (90 - this.deg) / 180)
+        return this.r * (cos + 1)
+      },
+      y() {
+        const sin = Math.sin(Math.PI * (90 - this.deg) / 180)
+        return this.r * (1 - sin)
+      },
+    },
+    methods: {
+      add() {
+        this.count += 2
+      },
+      sub() {
+        this.count >= 2 ? this.count -= 2 : ''
+      }
+    }
+  })
+</script>
+</body>
+</html>
