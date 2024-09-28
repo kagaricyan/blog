@@ -3,11 +3,11 @@
   <title>kagari</title>
   
   
-  <link href="https://kagaricyan.github.io/atom.xml" rel="self"/>
+  <link href="https://kagaricyan.github.io/blog/atom.xml" rel="self"/>
   
-  <link href="https://kagaricyan.github.io/"/>
+  <link href="https://kagaricyan.github.io/blog/"/>
   <updated>2024-09-28T15:00:36.620Z</updated>
-  <id>https://kagaricyan.github.io/</id>
+  <id>https://kagaricyan.github.io/blog/</id>
   
   <author>
     <name>kagari</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://kagaricyan.github.io/2024/09/22/hello-world/"/>
-    <id>https://kagaricyan.github.io/2024/09/22/hello-world/</id>
+    <link href="https://kagaricyan.github.io/blog/2024/09/22/hello-world/"/>
+    <id>https://kagaricyan.github.io/blog/2024/09/22/hello-world/</id>
     <published>2024-09-22T06:33:23.138Z</published>
     <updated>2024-09-28T15:00:36.620Z</updated>
     
@@ -30,10 +30,10 @@
     
     
     
-    <category term="未分类" scheme="https://kagaricyan.github.io/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    <category term="未分类" scheme="https://kagaricyan.github.io/blog/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
     
     
-    <category term="未分类" scheme="https://kagaricyan.github.io/tags/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    <category term="未分类" scheme="https://kagaricyan.github.io/blog/tags/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
     
   </entry>
   
